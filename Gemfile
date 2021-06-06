@@ -42,6 +42,7 @@ group :development do
   gem "listen", "~> 3.3"
   gem "solargraph"
   gem "steep"
+  gem "yard"
 end
 
 group :test do

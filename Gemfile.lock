@@ -313,6 +313,7 @@ DEPENDENCIES
   solargraph
   steep
   tzinfo-data
+  yard
 
 RUBY VERSION
    ruby 3.0.0p0
