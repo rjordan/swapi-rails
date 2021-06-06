@@ -1,0 +1,8 @@
+module ActiveRecord
+  class Base
+    def self.implicit_order_column=: (String|Symbol) -> (String|Symbol)
+
+    # This is there, why does it now show up?
+    def self.find_or_create_by!: (untyped attributes) { () -> untyped } -> untyped
+  end
+end

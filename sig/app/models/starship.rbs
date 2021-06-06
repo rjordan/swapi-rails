@@ -1,0 +1,283 @@
+class Starship < ApplicationRecord
+  extend _ActiveRecord_Relation_ClassMethods[Starship, ActiveRecord_Relation, String]
+
+  attr_accessor id(): String
+  def id_changed?: () -> bool
+  def id_change: () -> [ String?, String? ]
+  def id_will_change!: () -> void
+  def id_was: () -> String?
+  def id_previously_changed?: () -> bool
+  def id_previous_change: () -> Array[String?]?
+  def id_previously_was: () -> String?
+  def id_before_last_save: () -> String?
+  def id_change_to_be_saved: () -> Array[String?]?
+  def id_in_database: () -> String?
+  def saved_change_to_id: () -> Array[String?]?
+  def saved_change_to_id?: () -> bool
+  def will_save_change_to_id?: () -> bool
+  def restore_id!: () -> void
+  def clear_id_change: () -> void
+
+  attr_accessor name(): String
+  def name_changed?: () -> bool
+  def name_change: () -> [ String?, String? ]
+  def name_will_change!: () -> void
+  def name_was: () -> String?
+  def name_previously_changed?: () -> bool
+  def name_previous_change: () -> Array[String?]?
+  def name_previously_was: () -> String?
+  def name_before_last_save: () -> String?
+  def name_change_to_be_saved: () -> Array[String?]?
+  def name_in_database: () -> String?
+  def saved_change_to_name: () -> Array[String?]?
+  def saved_change_to_name?: () -> bool
+  def will_save_change_to_name?: () -> bool
+  def restore_name!: () -> void
+  def clear_name_change: () -> void
+
+  attr_accessor model(): String
+  def model_changed?: () -> bool
+  def model_change: () -> [ String?, String? ]
+  def model_will_change!: () -> void
+  def model_was: () -> String?
+  def model_previously_changed?: () -> bool
+  def model_previous_change: () -> Array[String?]?
+  def model_previously_was: () -> String?
+  def model_before_last_save: () -> String?
+  def model_change_to_be_saved: () -> Array[String?]?
+  def model_in_database: () -> String?
+  def saved_change_to_model: () -> Array[String?]?
+  def saved_change_to_model?: () -> bool
+  def will_save_change_to_model?: () -> bool
+  def restore_model!: () -> void
+  def clear_model_change: () -> void
+
+  attr_accessor mglt(): Float
+  def mglt_changed?: () -> bool
+  def mglt_change: () -> [ Float?, Float? ]
+  def mglt_will_change!: () -> void
+  def mglt_was: () -> Float?
+  def mglt_previously_changed?: () -> bool
+  def mglt_previous_change: () -> Array[Float?]?
+  def mglt_previously_was: () -> Float?
+  def mglt_before_last_save: () -> Float?
+  def mglt_change_to_be_saved: () -> Array[Float?]?
+  def mglt_in_database: () -> Float?
+  def saved_change_to_mglt: () -> Array[Float?]?
+  def saved_change_to_mglt?: () -> bool
+  def will_save_change_to_mglt?: () -> bool
+  def restore_mglt!: () -> void
+  def clear_mglt_change: () -> void
+
+  attr_accessor cargo_capacity(): Integer
+  def cargo_capacity_changed?: () -> bool
+  def cargo_capacity_change: () -> [ Integer?, Integer? ]
+  def cargo_capacity_will_change!: () -> void
+  def cargo_capacity_was: () -> Integer?
+  def cargo_capacity_previously_changed?: () -> bool
+  def cargo_capacity_previous_change: () -> Array[Integer?]?
+  def cargo_capacity_previously_was: () -> Integer?
+  def cargo_capacity_before_last_save: () -> Integer?
+  def cargo_capacity_change_to_be_saved: () -> Array[Integer?]?
+  def cargo_capacity_in_database: () -> Integer?
+  def saved_change_to_cargo_capacity: () -> Array[Integer?]?
+  def saved_change_to_cargo_capacity?: () -> bool
+  def will_save_change_to_cargo_capacity?: () -> bool
+  def restore_cargo_capacity!: () -> void
+  def clear_cargo_capacity_change: () -> void
+
+  attr_accessor consumables(): String
+  def consumables_changed?: () -> bool
+  def consumables_change: () -> [ String?, String? ]
+  def consumables_will_change!: () -> void
+  def consumables_was: () -> String?
+  def consumables_previously_changed?: () -> bool
+  def consumables_previous_change: () -> Array[String?]?
+  def consumables_previously_was: () -> String?
+  def consumables_before_last_save: () -> String?
+  def consumables_change_to_be_saved: () -> Array[String?]?
+  def consumables_in_database: () -> String?
+  def saved_change_to_consumables: () -> Array[String?]?
+  def saved_change_to_consumables?: () -> bool
+  def will_save_change_to_consumables?: () -> bool
+  def restore_consumables!: () -> void
+  def clear_consumables_change: () -> void
+
+  attr_accessor cost_in_credits(): Integer
+  def cost_in_credits_changed?: () -> bool
+  def cost_in_credits_change: () -> [ Integer?, Integer? ]
+  def cost_in_credits_will_change!: () -> void
+  def cost_in_credits_was: () -> Integer?
+  def cost_in_credits_previously_changed?: () -> bool
+  def cost_in_credits_previous_change: () -> Array[Integer?]?
+  def cost_in_credits_previously_was: () -> Integer?
+  def cost_in_credits_before_last_save: () -> Integer?
+  def cost_in_credits_change_to_be_saved: () -> Array[Integer?]?
+  def cost_in_credits_in_database: () -> Integer?
+  def saved_change_to_cost_in_credits: () -> Array[Integer?]?
+  def saved_change_to_cost_in_credits?: () -> bool
+  def will_save_change_to_cost_in_credits?: () -> bool
+  def restore_cost_in_credits!: () -> void
+  def clear_cost_in_credits_change: () -> void
+
+  attr_accessor crew(): Integer
+  def crew_changed?: () -> bool
+  def crew_change: () -> [ Integer?, Integer? ]
+  def crew_will_change!: () -> void
+  def crew_was: () -> Integer?
+  def crew_previously_changed?: () -> bool
+  def crew_previous_change: () -> Array[Integer?]?
+  def crew_previously_was: () -> Integer?
+  def crew_before_last_save: () -> Integer?
+  def crew_change_to_be_saved: () -> Array[Integer?]?
+  def crew_in_database: () -> Integer?
+  def saved_change_to_crew: () -> Array[Integer?]?
+  def saved_change_to_crew?: () -> bool
+  def will_save_change_to_crew?: () -> bool
+  def restore_crew!: () -> void
+  def clear_crew_change: () -> void
+
+  attr_accessor hyperdrive_rating(): Float
+  def hyperdrive_rating_changed?: () -> bool
+  def hyperdrive_rating_change: () -> [ Float?, Float? ]
+  def hyperdrive_rating_will_change!: () -> void
+  def hyperdrive_rating_was: () -> Float?
+  def hyperdrive_rating_previously_changed?: () -> bool
+  def hyperdrive_rating_previous_change: () -> Array[Float?]?
+  def hyperdrive_rating_previously_was: () -> Float?
+  def hyperdrive_rating_before_last_save: () -> Float?
+  def hyperdrive_rating_change_to_be_saved: () -> Array[Float?]?
+  def hyperdrive_rating_in_database: () -> Float?
+  def saved_change_to_hyperdrive_rating: () -> Array[Float?]?
+  def saved_change_to_hyperdrive_rating?: () -> bool
+  def will_save_change_to_hyperdrive_rating?: () -> bool
+  def restore_hyperdrive_rating!: () -> void
+  def clear_hyperdrive_rating_change: () -> void
+
+  attr_accessor length(): Float
+  def length_changed?: () -> bool
+  def length_change: () -> [ Float?, Float? ]
+  def length_will_change!: () -> void
+  def length_was: () -> Float?
+  def length_previously_changed?: () -> bool
+  def length_previous_change: () -> Array[Float?]?
+  def length_previously_was: () -> Float?
+  def length_before_last_save: () -> Float?
+  def length_change_to_be_saved: () -> Array[Float?]?
+  def length_in_database: () -> Float?
+  def saved_change_to_length: () -> Array[Float?]?
+  def saved_change_to_length?: () -> bool
+  def will_save_change_to_length?: () -> bool
+  def restore_length!: () -> void
+  def clear_length_change: () -> void
+
+  attr_accessor manufacturer(): String
+  def manufacturer_changed?: () -> bool
+  def manufacturer_change: () -> [ String?, String? ]
+  def manufacturer_will_change!: () -> void
+  def manufacturer_was: () -> String?
+  def manufacturer_previously_changed?: () -> bool
+  def manufacturer_previous_change: () -> Array[String?]?
+  def manufacturer_previously_was: () -> String?
+  def manufacturer_before_last_save: () -> String?
+  def manufacturer_change_to_be_saved: () -> Array[String?]?
+  def manufacturer_in_database: () -> String?
+  def saved_change_to_manufacturer: () -> Array[String?]?
+  def saved_change_to_manufacturer?: () -> bool
+  def will_save_change_to_manufacturer?: () -> bool
+  def restore_manufacturer!: () -> void
+  def clear_manufacturer_change: () -> void
+
+  attr_accessor max_atmospheric_speed(): Float
+  def max_atmospheric_speed_changed?: () -> bool
+  def max_atmospheric_speed_change: () -> [ Float?, Float? ]
+  def max_atmospheric_speed_will_change!: () -> void
+  def max_atmospheric_speed_was: () -> Float?
+  def max_atmospheric_speed_previously_changed?: () -> bool
+  def max_atmospheric_speed_previous_change: () -> Array[Float?]?
+  def max_atmospheric_speed_previously_was: () -> Float?
+  def max_atmospheric_speed_before_last_save: () -> Float?
+  def max_atmospheric_speed_change_to_be_saved: () -> Array[Float?]?
+  def max_atmospheric_speed_in_database: () -> Float?
+  def saved_change_to_max_atmospheric_speed: () -> Array[Float?]?
+  def saved_change_to_max_atmospheric_speed?: () -> bool
+  def will_save_change_to_max_atmospheric_speed?: () -> bool
+  def restore_max_atmospheric_speed!: () -> void
+  def clear_max_atmospheric_speed_change: () -> void
+
+  attr_accessor passengers(): Integer
+  def passengers_changed?: () -> bool
+  def passengers_change: () -> [ Integer?, Integer? ]
+  def passengers_will_change!: () -> void
+  def passengers_was: () -> Integer?
+  def passengers_previously_changed?: () -> bool
+  def passengers_previous_change: () -> Array[Integer?]?
+  def passengers_previously_was: () -> Integer?
+  def passengers_before_last_save: () -> Integer?
+  def passengers_change_to_be_saved: () -> Array[Integer?]?
+  def passengers_in_database: () -> Integer?
+  def saved_change_to_passengers: () -> Array[Integer?]?
+  def saved_change_to_passengers?: () -> bool
+  def will_save_change_to_passengers?: () -> bool
+  def restore_passengers!: () -> void
+  def clear_passengers_change: () -> void
+
+  attr_accessor starship_class(): String
+  def starship_class_changed?: () -> bool
+  def starship_class_change: () -> [ String?, String? ]
+  def starship_class_will_change!: () -> void
+  def starship_class_was: () -> String?
+  def starship_class_previously_changed?: () -> bool
+  def starship_class_previous_change: () -> Array[String?]?
+  def starship_class_previously_was: () -> String?
+  def starship_class_before_last_save: () -> String?
+  def starship_class_change_to_be_saved: () -> Array[String?]?
+  def starship_class_in_database: () -> String?
+  def saved_change_to_starship_class: () -> Array[String?]?
+  def saved_change_to_starship_class?: () -> bool
+  def will_save_change_to_starship_class?: () -> bool
+  def restore_starship_class!: () -> void
+  def clear_starship_class_change: () -> void
+
+  attr_accessor created_at(): ActiveSupport::TimeWithZone
+  def created_at_changed?: () -> bool
+  def created_at_change: () -> [ ActiveSupport::TimeWithZone?, ActiveSupport::TimeWithZone? ]
+  def created_at_will_change!: () -> void
+  def created_at_was: () -> ActiveSupport::TimeWithZone?
+  def created_at_previously_changed?: () -> bool
+  def created_at_previous_change: () -> Array[ActiveSupport::TimeWithZone?]?
+  def created_at_previously_was: () -> ActiveSupport::TimeWithZone?
+  def created_at_before_last_save: () -> ActiveSupport::TimeWithZone?
+  def created_at_change_to_be_saved: () -> Array[ActiveSupport::TimeWithZone?]?
+  def created_at_in_database: () -> ActiveSupport::TimeWithZone?
+  def saved_change_to_created_at: () -> Array[ActiveSupport::TimeWithZone?]?
+  def saved_change_to_created_at?: () -> bool
+  def will_save_change_to_created_at?: () -> bool
+  def restore_created_at!: () -> void
+  def clear_created_at_change: () -> void
+
+  attr_accessor updated_at(): ActiveSupport::TimeWithZone
+  def updated_at_changed?: () -> bool
+  def updated_at_change: () -> [ ActiveSupport::TimeWithZone?, ActiveSupport::TimeWithZone? ]
+  def updated_at_will_change!: () -> void
+  def updated_at_was: () -> ActiveSupport::TimeWithZone?
+  def updated_at_previously_changed?: () -> bool
+  def updated_at_previous_change: () -> Array[ActiveSupport::TimeWithZone?]?
+  def updated_at_previously_was: () -> ActiveSupport::TimeWithZone?
+  def updated_at_before_last_save: () -> ActiveSupport::TimeWithZone?
+  def updated_at_change_to_be_saved: () -> Array[ActiveSupport::TimeWithZone?]?
+  def updated_at_in_database: () -> ActiveSupport::TimeWithZone?
+  def saved_change_to_updated_at: () -> Array[ActiveSupport::TimeWithZone?]?
+  def saved_change_to_updated_at?: () -> bool
+  def will_save_change_to_updated_at?: () -> bool
+  def restore_updated_at!: () -> void
+  def clear_updated_at_change: () -> void
+
+  class ActiveRecord_Relation < ActiveRecord::Relation
+    include _ActiveRecord_Relation[Starship, String]
+    include Enumerable[Starship]
+  end
+
+  class ActiveRecord_Associations_CollectionProxy < ActiveRecord::Associations::CollectionProxy
+  end
+end

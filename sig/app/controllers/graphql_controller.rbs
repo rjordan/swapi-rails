@@ -1,0 +1,4 @@
+class GraphqlController < ApplicationController
+ def handle_error_in_development: (Exception) -> untyped
+ def prepare_variables: (untyped) -> Hash[String,untyped]
+end
