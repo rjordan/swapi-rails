@@ -6,6 +6,7 @@ FactoryBot.define do
       starship_count { 1 }
     end
     title { Faker::Movie.title }
+    episode_id { Faker::Number.positive }
     opening_crawl { Faker::Lorem.paragraphs(number: 2..5) }
     director { Faker::Name.name }
     producer { Faker::Name.name }

@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2021_06_06_221037) do
 
   create_table "films", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.string "title", null: false
+    t.integer "episode_id", null: false
     t.text "opening_crawl", null: false
     t.string "director", null: false
     t.string "producer", null: false

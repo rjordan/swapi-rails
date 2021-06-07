@@ -27,3 +27,6 @@
 /config/master.key
 
 /.yardoc
+
+.env.local
+.env.*.local

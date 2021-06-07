@@ -75,7 +75,7 @@ Starship.find_or_create_by!(name: "CR90 corvette") do |s|
   s.starship_class = "corvette"
   s.model = "CR90 corvette"
   s.manufacturer = "Corellian Engineering Corporation"
-  s.cost_in_credits = 3_500_000.6
+  s.cost_in_credits = 3_500_000
   s.length = 150
   s.max_atmospheric_speed = 950
   s.crew = 165
