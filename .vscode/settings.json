@@ -9,6 +9,16 @@
       "database": "postgres",
       "username": "postgres",
       "password": "postgres"
+    },
+    {
+      "previewLimit": 50,
+      "server": "192.168.33.1",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "CodeCrusade",
+      "database": "swapi_development",
+      "username": "rails",
+      "password": "rails"
     }
   ]
 }

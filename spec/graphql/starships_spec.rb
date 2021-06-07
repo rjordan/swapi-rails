@@ -43,6 +43,12 @@ RSpec.describe SwapiSchema, type: :model do
             passengers
             consumables
             cargoCapacity
+            films {
+              nodes {
+                id
+                title
+              }
+            }
           }
         }
       }
@@ -72,7 +78,15 @@ RSpec.describe SwapiSchema, type: :model do
                      "crew" => starship.crew,
                      "passengers" => starship.passengers,
                      "consumables" => starship.consumables,
-                     "cargoCapacity" => starship.cargo_capacity
+                     "cargoCapacity" => starship.cargo_capacity,
+                     "films" => {
+                       "nodes" => starship.films.map do |film|
+                                    {
+                                      "id" => film.id,
+                                      "title" => film.title
+                                    }
+                                  end
+                     }
                    }
                  end
     }

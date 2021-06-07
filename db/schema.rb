@@ -10,10 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_02_074147) do
+ActiveRecord::Schema.define(version: 2021_06_06_221037) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "films", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.string "title", null: false
+    t.text "opening_crawl", null: false
+    t.string "director", null: false
+    t.string "producer", null: false
+    t.datetime "release_date", null: false
+    t.string "imdb_url", null: false
+    t.text "facts", default: [], null: false, array: true
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "films_starships", id: false, force: :cascade do |t|
+    t.uuid "film_id", null: false
+    t.uuid "starship_id", null: false
+  end
 
   create_table "starships", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.string "name", null: false

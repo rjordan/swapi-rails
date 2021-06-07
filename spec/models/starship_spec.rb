@@ -21,5 +21,7 @@ RSpec.describe Starship, type: :model do
     it { is_expected.not_to allow_values(nil, "", -1, 0, 11).for(:hyperdrive_rating) }
     it { is_expected.not_to allow_values(nil, "", -1, 0).for(:length) }
     it { is_expected.not_to allow_values(nil, "", -1, 0).for(:max_atmospheric_speed) }
+
+    it { is_expected.to have_and_belong_to_many(:films) }
   end
 end

@@ -19,6 +19,7 @@ module Types
     field :passengers, Integer, "The maximum number of passengers", null: false
     field :starship_class, String, "The starship class", null: false
     # t.timestamps
+    field :films, Types::Film.connection_type, "Films this starship appears in", null: false
 
     def self.resolve_reference(reference, _context)
       Starship.find(reference[:id])

@@ -17,6 +17,8 @@ class Starship < ApplicationRecord
   validates :length, presence: true, numericality: { greater_than: 0 }
   validates :max_atmospheric_speed, presence: true, numericality: { greater_than: 0 }
 
+  has_and_belongs_to_many :films
+
   # Fix issue with ruby constants
   alias_attribute :MGLT, :mglt
 end

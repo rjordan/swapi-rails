@@ -6,6 +6,7 @@ module Types
     include GraphQL::Types::Relay::HasNodeField
     include GraphQL::Types::Relay::HasNodesField
 
+    include Queries::FilmsQuery
     include Queries::StarshipsQuery
     include Queries::StarshipQuery
   end
